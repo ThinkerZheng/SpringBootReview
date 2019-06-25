@@ -81,4 +81,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<modules>
+		<module>sbr-Eureka</module>
+	</modules>
 </project>
