@@ -1,8 +1,10 @@
-#eclipse files
+#eclipse and intellij files
 .classpath
 .project
 .settings/
 target/
+.idea/
+
 
 # Built application files
 *.apk
