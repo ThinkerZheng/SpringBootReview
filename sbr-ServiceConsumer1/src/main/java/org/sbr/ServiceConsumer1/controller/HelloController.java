@@ -9,11 +9,13 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class HelloController {
 
-	  @Autowired
-	    private RestTemplate restTemplate;
+	@Autowired
+	private RestTemplate restTemplate;
 
-	    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-	    public String hello() {
-	        return restTemplate.getForEntity("http://SERVICE-HELLO/hello", String.class).getBody();
-	    }
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	public String hello() {
+		return restTemplate.getForEntity("http://RPOVIDER-SERVICE1-HELLO/hello", String.class).getBody();
+		//return restTemplate.getForEntity("http://localhost:8568/hello", String.class).getBody();
+		
+	}
 }

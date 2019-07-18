@@ -1,0 +1,51 @@
+package net.guangbin.mybatis.dao.mapperInf;
+
+import net.guangbin.mybatis.dao.entity.User;
+import org.apache.ibatis.jdbc.SQL;
+
+public class UserSqlProvider {
+
+    public String insertSelective(User record) {
+        SQL sql = new SQL();
+        sql.INSERT_INTO("user");
+        
+        if (record.getId() != null) {
+            sql.VALUES("id", "#{id,jdbcType=INTEGER}");
+        }
+        
+        if (record.getUsername() != null) {
+            sql.VALUES("userName", "#{username,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getPassword() != null) {
+            sql.VALUES("password", "#{password,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getRoles() != null) {
+            sql.VALUES("roles", "#{roles,jdbcType=VARCHAR}");
+        }
+        
+        return sql.toString();
+    }
+
+    public String updateByPrimaryKeySelective(User record) {
+        SQL sql = new SQL();
+        sql.UPDATE("user");
+        
+        if (record.getUsername() != null) {
+            sql.SET("userName = #{username,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getPassword() != null) {
+            sql.SET("password = #{password,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getRoles() != null) {
+            sql.SET("roles = #{roles,jdbcType=VARCHAR}");
+        }
+        
+        sql.WHERE("id = #{id,jdbcType=INTEGER}");
+        
+        return sql.toString();
+    }
+}
