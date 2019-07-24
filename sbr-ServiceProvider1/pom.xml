@@ -44,5 +44,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>sbr-ServiceProvider1</finalName>
 	</build>
 </project>

@@ -1,0 +1,152 @@
+2019-07-25 00:49:37.608  INFO 16544 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3a252045: startup date [Thu Jul 25 00:49:37 CST 2019]; root of context hierarchy
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (jar:file:/Users/guangbin/dev/sts/SpringBootReview/sbr-ServiceConsumer1/target/sbr-ServiceConsumer1.jar!/lib/spring-core-5.0.9.RELEASE.jar!/) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-07-25 00:49:37.928  INFO 16544 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-25 00:49:38.027  INFO 16544 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c52183e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.5.RELEASE)
+
+2019-07-25 00:49:38.282  INFO 16544 --- [           main] o.s.S.ComsumerApplication                : No active profile set, falling back to default profiles: default
+2019-07-25 00:49:38.308  INFO 16544 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69f5370c: startup date [Thu Jul 25 00:49:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3a252045
+2019-07-25 00:49:39.562  INFO 16544 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ca07b8e4-3815-3fe8-acfd-38a8334ed57b
+2019-07-25 00:49:39.597  INFO 16544 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-25 00:49:39.763  INFO 16544 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c52183e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-25 00:49:40.318  INFO 16544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8569 (http)
+2019-07-25 00:49:40.352  INFO 16544 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-25 00:49:40.352  INFO 16544 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-07-25 00:49:40.364  INFO 16544 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/guangbin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-07-25 00:49:40.543  INFO 16544 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-25 00:49:40.543  INFO 16544 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2235 ms
+2019-07-25 00:49:40.897  WARN 16544 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-25 00:49:40.897  INFO 16544 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-25 00:49:40.925  INFO 16544 --- [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@269e8230
+2019-07-25 00:49:42.031  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-25 00:49:42.032  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-07-25 00:49:42.032  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-25 00:49:42.032  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-25 00:49:42.032  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-25 00:49:42.032  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2019-07-25 00:49:42.033  INFO 16544 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-07-25 00:49:42.205  WARN 16544 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-07-25 00:49:42.205  INFO 16544 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-07-25 00:49:42.340  INFO 16544 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-25 00:49:42.718  INFO 16544 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69f5370c: startup date [Thu Jul 25 00:49:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3a252045
+2019-07-25 00:49:42.842  INFO 16544 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String org.sbr.ServiceConsumer1.controller.HelloController.hello()
+2019-07-25 00:49:42.843  INFO 16544 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1],methods=[GET]}" onto public java.lang.String org.sbr.ServiceConsumer1.controller.HelloController.hell01()
+2019-07-25 00:49:42.847  INFO 16544 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-25 00:49:42.848  INFO 16544 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-25 00:49:42.906  INFO 16544 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-25 00:49:42.907  INFO 16544 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-25 00:49:43.650  INFO 16544 --- [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69f5370c: startup date [Thu Jul 25 00:49:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3a252045] and template loader path [classpath:/templates/]
+2019-07-25 00:49:43.651  INFO 16544 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-25 00:49:43.925  INFO 16544 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-25 00:49:43.947  INFO 16544 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-07-25 00:49:43.948  INFO 16544 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-07-25 00:49:43.949  INFO 16544 --- [           main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-25 00:49:44.022  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-07-25 00:49:44.034  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-07-25 00:49:44.035  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-07-25 00:49:44.036  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-07-25 00:49:44.040  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-07-25 00:49:44.052  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-07-25 00:49:44.070  INFO 16544 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=69f5370c,type=ConfigurationPropertiesRebinder]
+2019-07-25 00:49:44.082  INFO 16544 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-07-25 00:49:44.094  INFO 16544 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-07-25 00:49:44.164  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-07-25 00:49:44.595  INFO 16544 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-07-25 00:49:44.596  INFO 16544 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-07-25 00:49:44.888  INFO 16544 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-07-25 00:49:44.888  INFO 16544 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-07-25 00:49:45.222  INFO 16544 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-25 00:49:45.262  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-07-25 00:49:45.262  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-07-25 00:49:45.263  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-07-25 00:49:45.263  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-07-25 00:49:45.263  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-07-25 00:49:45.263  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-07-25 00:49:45.263  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-07-25 00:49:45.608  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-07-25 00:49:45.612  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-07-25 00:49:45.619  INFO 16544 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-07-25 00:49:45.630  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1563986985628 with initial instances count: 2
+2019-07-25 00:49:45.641  INFO 16544 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONSUMER-SERVICE1-HELLO with eureka with status UP
+2019-07-25 00:49:45.643  INFO 16544 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1563986985643, current=UP, previous=STARTING]
+2019-07-25 00:49:45.647  INFO 16544 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONSUMER-SERVICE1-HELLO/guangbindembp.lan:CONSUMER-SERVICE1-HELLO:8569: registering service...
+2019-07-25 00:49:45.697  INFO 16544 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONSUMER-SERVICE1-HELLO/guangbindembp.lan:CONSUMER-SERVICE1-HELLO:8569 - registration status: 204
+2019-07-25 00:49:45.767  INFO 16544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8569 (http) with context path ''
+2019-07-25 00:49:45.770  INFO 16544 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8569
+2019-07-25 00:49:45.776  INFO 16544 --- [           main] o.s.S.ComsumerApplication                : Started ComsumerApplication in 8.834 seconds (JVM running for 9.642)
+2019-07-25 00:50:25.283  INFO 16544 --- [nio-8569-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-25 00:50:25.283  INFO 16544 --- [nio-8569-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-25 00:50:25.328  INFO 16544 --- [nio-8569-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2019-07-25 00:50:25.454  INFO 16544 --- [nio-8569-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing SpringClientFactory-RPOVIDER-SERVICE1-HELLO: startup date [Thu Jul 25 00:50:25 CST 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69f5370c
+2019-07-25 00:50:25.555  INFO 16544 --- [nio-8569-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-25 00:50:26.047  INFO 16544 --- [nio-8569-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: RPOVIDER-SERVICE1-HELLO.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-07-25 00:50:26.091  INFO 16544 --- [nio-8569-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-RPOVIDER-SERVICE1-HELLO
+2019-07-25 00:50:26.161  INFO 16544 --- [nio-8569-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: RPOVIDER-SERVICE1-HELLO instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=RPOVIDER-SERVICE1-HELLO,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-07-25 00:50:26.174  INFO 16544 --- [nio-8569-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2019-07-25 00:50:26.253  INFO 16544 --- [nio-8569-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: RPOVIDER-SERVICE1-HELLO.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-07-25 00:50:26.255  INFO 16544 --- [nio-8569-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client RPOVIDER-SERVICE1-HELLO initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=RPOVIDER-SERVICE1-HELLO,current list of Servers=[guangbindembp.lan:8568, guangbindembp.lan:9568],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:2;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:guangbindembp.lan:9568;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:guangbindembp.lan:8568;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2d3069d2
+2019-07-25 00:50:27.219  INFO 16544 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: RPOVIDER-SERVICE1-HELLO.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-07-25 00:54:45.277  INFO 16544 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-07-25 00:54:53.503  INFO 16544 --- [      Thread-12] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2019-07-25 00:54:53.505  INFO 16544 --- [       Thread-8] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69f5370c: startup date [Thu Jul 25 00:49:38 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3a252045
+2019-07-25 00:54:53.515  INFO 16544 --- [       Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONSUMER-SERVICE1-HELLO with eureka with status DOWN
+2019-07-25 00:54:53.515  WARN 16544 --- [       Thread-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1563987293515, current=DOWN, previous=UP]
+2019-07-25 00:54:53.515  INFO 16544 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONSUMER-SERVICE1-HELLO/guangbindembp.lan:CONSUMER-SERVICE1-HELLO:8569: registering service...
+2019-07-25 00:54:53.533  INFO 16544 --- [       Thread-8] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-07-25 00:54:53.554  INFO 16544 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONSUMER-SERVICE1-HELLO/guangbindembp.lan:CONSUMER-SERVICE1-HELLO:8569 - registration status: 204
+2019-07-25 00:54:53.557  INFO 16544 --- [       Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-07-25 00:54:53.558  INFO 16544 --- [       Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-07-25 00:54:53.570  INFO 16544 --- [       Thread-8] s.c.a.AnnotationConfigApplicationContext : Closing SpringClientFactory-RPOVIDER-SERVICE1-HELLO: startup date [Thu Jul 25 00:50:25 CST 2019]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69f5370c
+2019-07-25 00:54:53.576  INFO 16544 --- [       Thread-8] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-RPOVIDER-SERVICE1-HELLO
+2019-07-25 00:54:53.591  INFO 16544 --- [       Thread-8] c.n.u.concurrent.ShutdownEnabledTimer    : Exception caught (might be ok if at shutdown)
+
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:na]
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:247) ~[na:na]
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.3.0.jar!/:0.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:613) [ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:864) [ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285) [ribbon-loadbalancer-2.2.5.jar!/:2.2.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041) [spring-context-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017) [spring-context-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967) [spring-context-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-2.0.0.RELEASE.jar!/:2.0.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041) [spring-context-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017) [spring-context-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937) [spring-context-5.0.9.RELEASE.jar!/:5.0.9.RELEASE]
+
+2019-07-25 00:54:53.604  INFO 16544 --- [       Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-07-25 00:54:56.607  INFO 16544 --- [       Thread-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-07-25 00:54:56.630  INFO 16544 --- [       Thread-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONSUMER-SERVICE1-HELLO/guangbindembp.lan:CONSUMER-SERVICE1-HELLO:8569 - deregister  status: 200
+2019-07-25 00:54:56.651  INFO 16544 --- [       Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
