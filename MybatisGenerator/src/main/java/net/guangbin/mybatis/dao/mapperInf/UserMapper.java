@@ -20,9 +20,11 @@ public interface UserMapper {
 
     @Insert({
         "insert into user (id, userName, ",
-        "password, roles)",
+        "password, roles, ",
+        "createTime, updateTime)",
         "values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, ",
-        "#{password,jdbcType=VARCHAR}, #{roles,jdbcType=VARCHAR})"
+        "#{password,jdbcType=VARCHAR}, #{roles,jdbcType=VARCHAR}, ",
+        "#{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP})"
     })
     int insert(User record);
 
@@ -31,7 +33,7 @@ public interface UserMapper {
 
     @Select({
         "select",
-        "id, userName, password, roles",
+        "id, userName, password, roles, createTime, updateTime",
         "from user",
         "where id = #{id,jdbcType=INTEGER}"
     })
@@ -39,7 +41,9 @@ public interface UserMapper {
         @Result(column="id", property="id", jdbcType=JdbcType.INTEGER, id=true),
         @Result(column="userName", property="username", jdbcType=JdbcType.VARCHAR),
         @Result(column="password", property="password", jdbcType=JdbcType.VARCHAR),
-        @Result(column="roles", property="roles", jdbcType=JdbcType.VARCHAR)
+        @Result(column="roles", property="roles", jdbcType=JdbcType.VARCHAR),
+        @Result(column="createTime", property="createtime", jdbcType=JdbcType.TIMESTAMP),
+        @Result(column="updateTime", property="updatetime", jdbcType=JdbcType.TIMESTAMP)
     })
     User selectByPrimaryKey(Integer id);
 
@@ -50,7 +54,9 @@ public interface UserMapper {
         "update user",
         "set userName = #{username,jdbcType=VARCHAR},",
           "password = #{password,jdbcType=VARCHAR},",
-          "roles = #{roles,jdbcType=VARCHAR}",
+          "roles = #{roles,jdbcType=VARCHAR},",
+          "createTime = #{createtime,jdbcType=TIMESTAMP},",
+          "updateTime = #{updatetime,jdbcType=TIMESTAMP}",
         "where id = #{id,jdbcType=INTEGER}"
     })
     int updateByPrimaryKey(User record);

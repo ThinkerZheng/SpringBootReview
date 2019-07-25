@@ -25,6 +25,14 @@ public class UserSqlProvider {
             sql.VALUES("roles", "#{roles,jdbcType=VARCHAR}");
         }
         
+        if (record.getCreatetime() != null) {
+            sql.VALUES("createTime", "#{createtime,jdbcType=TIMESTAMP}");
+        }
+        
+        if (record.getUpdatetime() != null) {
+            sql.VALUES("updateTime", "#{updatetime,jdbcType=TIMESTAMP}");
+        }
+        
         return sql.toString();
     }
 
@@ -42,6 +50,14 @@ public class UserSqlProvider {
         
         if (record.getRoles() != null) {
             sql.SET("roles = #{roles,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getCreatetime() != null) {
+            sql.SET("createTime = #{createtime,jdbcType=TIMESTAMP}");
+        }
+        
+        if (record.getUpdatetime() != null) {
+            sql.SET("updateTime = #{updatetime,jdbcType=TIMESTAMP}");
         }
         
         sql.WHERE("id = #{id,jdbcType=INTEGER}");
