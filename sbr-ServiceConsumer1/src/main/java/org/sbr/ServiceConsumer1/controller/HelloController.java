@@ -26,12 +26,12 @@ public class HelloController {
 	
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String hello() {
-		return restTemplate.getForEntity("http://RPOVIDER-SERVICE1-HELLO/hello", String.class).getBody();
+		return restTemplate.getForEntity("http://povider-service-hello/hello", String.class).getBody();
 	}
 	
 	@GetMapping(value = "/hello1")
 	public String hell01() {
-		ServiceInstance instance = this.loadBalancerClient.choose("RPOVIDER-SERVICE1-HELLO");
+		ServiceInstance instance = this.loadBalancerClient.choose("povider-service-hello");
 		URI helloUri = URI.create(String.format("http://%s:%s/hello", instance.getHost(),instance.getPort()));
 		logger.info("Target service Uri = {}", helloUri.toString());
 		return new RestTemplate().getForEntity(helloUri, String.class).getBody();

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value="/users",method = RequestMethod.GET, produces=MediaType.APPLICATION_JSON)
+@RequestMapping(value="/users",method = RequestMethod.GET, produces="application/json;charset=UTF-8")
 public class UserController {
 	
 	@Autowired
@@ -30,8 +30,5 @@ public class UserController {
 		public User GetUser(@PathVariable String userId) {
 			return userService.getUser(userId);
 		}
-
-		
-	
 
 }

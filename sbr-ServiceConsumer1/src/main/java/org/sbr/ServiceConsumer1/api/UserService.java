@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient("RPOVIDER-SERVICE1-HELLO")
+//@FeignClient("RPOVIDER-SERVICE1-HELLO")
+@FeignClient(name = "povider-service-hello")
 @RequestMapping(value="/users",method = RequestMethod.GET, produces=MediaType.APPLICATION_JSON)
 public interface UserService {
 	@GetMapping()
